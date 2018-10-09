@@ -1,10 +1,14 @@
+
+
 .container {
     background-color:white;
+
 }
 
 .jumbotron {
     height: 200px!important;
     padding-top: 24px!important;
+    cursor: url("../images/santa.png"), auto;
 }
 
 body {
@@ -47,14 +51,34 @@ div.panel-body {
     color: #1B4046;
 }
 
-#trainName:hover, #destination:hover, #firstTrain:hover, #interval:hover {
+#trainName:hover, #destination:hover, #cost:hover, #firstTrain:hover, #interval:hover {
     background-color: #D9E2C7!important;
 }
 
-#trainName, #destination, #firstTrain, #interval {
+#trainName {
     transition: 1.5s;
-    cursor: url('path-to-image.png'), auto;	
+    cursor: url("../images/name.png"), auto;	
+}
+
+#destination {
+    transition: 1.5s;
+    cursor: url("../images/destination.png"), auto;	
+}
+
+#cost {
+    transition: 1.5s;
+    cursor: url("../images/cost.png"), auto;	
+}
+
+#firstTrain {
+    transition: 1.5s;
+    cursor: url("../images/departure.png"), auto;	
       
+}
+
+#interval {
+    transition: 1.5s;
+    cursor: url("../images/frequency.png"), auto;	  
 }
 
 .btn-primary {
@@ -114,7 +138,8 @@ div.panel-body {
 
     margin: 30px;
   }
+  
  .icon {
-     width: 26px;
+     width: 20px;
      opacity: 0.5;
  }

@@ -20,6 +20,7 @@ $(document).ready(function () {
     // Grabbed values from text boxes
     var trainName = $("#trainName").val().trim();
     var destination = $("#destination").val().trim();
+    var cost = $("#cost").val().trim();
     var firstTrain = $("#firstTrain").val().trim();
     var freq = $("#interval").val().trim();
 
@@ -27,6 +28,7 @@ $(document).ready(function () {
     database.ref().push({
       trainName: trainName,
       destination: destination,
+      cost: cost,
       firstTrain: firstTrain,
       frequency: freq
     });
@@ -38,6 +40,7 @@ $(document).ready(function () {
 
     var newTrain = childSnapshot.val().trainName;
     var newLocation = childSnapshot.val().destination;
+    var newCost = childSnapshot.val().cost;
     var newFirstTrain = childSnapshot.val().firstTrain;
     var newFreq = childSnapshot.val().frequency;
 
@@ -64,12 +67,13 @@ $(document).ready(function () {
     $("#all-display").append(
       ' <tr><td>' + newTrain +
       ' </td><td>' + newLocation +
+      ' </td><td>' + newCost +
       ' </td><td>' + newFreq +
       ' </td><td>' + catchTrain +
       ' </td><td>' + tMinutesTillTrain + ' </td></tr>');
 
     // Clear input fields
-    $("#trainName, #destination, #firstTrain, #interval").val("");
+    $("#trainName, #destination, #cost, #firstTrain, #interval").val("");
     return false;
   },
     //Handle the errors
