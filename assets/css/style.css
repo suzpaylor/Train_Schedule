@@ -1,0 +1,120 @@
+.container {
+    background-color:white;
+}
+
+.jumbotron {
+    height: 200px!important;
+    padding-top: 24px!important;
+}
+
+body {
+    color: #1B4046!important;
+    font-family: 'Kodchasan', sans-serif!important;
+}
+
+.jumbotron {
+   
+    background-position-y: 10%;
+    color: white;
+    background-color: #C0192D;
+}
+
+input, textarea{
+    background-color:#579274!important;
+    color: #FFF;
+}
+
+input:focus
+    {
+    background-color:#D9E2C7!important;
+    }
+
+select:active, select:hover {
+        outline-color:#C0192D!important;
+        box-shadow: 5px 5px #C0192D!important;
+      }
+
+div.panel-body {
+    
+    color:#1B4046;
+}
+
+.panel-heading {
+    background-color: #D9E2C7!important;
+}
+
+.panel-title {
+    color: #1B4046;
+}
+
+#trainName:hover, #destination:hover, #firstTrain:hover, #interval:hover {
+    background-color: #D9E2C7!important;
+}
+
+#trainName, #destination, #firstTrain, #interval {
+    transition: 1.5s;
+    cursor: url('path-to-image.png'), auto;	
+      
+}
+
+.btn-primary {
+    background-color: #D9E2C7;
+    border-color: #fff;
+    font-weight: bold;
+    color: #1B4046;
+    transition: 1.5s;
+}
+
+.btn-primary:hover {
+    background-color:#D9E2C7; 
+    border: none;
+}
+
+.form-control:focus {
+    color: #C0192D;
+    background-color: #C0192D;
+    border-color: #F6F0CC;
+    font-weight: bolder;
+  }
+
+  .form-control:hover {
+    background-color: #D9E2C7;
+
+  }
+
+  #demo {
+      text-align: center;
+  }
+
+  .santa {
+    display: flex;
+    align-items: center;
+  }
+
+  .santa-images {
+    width: 100px;
+    
+    /* #1 */
+    border: 5px solid #D9E2C7;
+    
+    /* #2 */
+    padding: 5px;
+    background:#579274;
+    
+    /* #3 */
+   
+    
+    width: 300px;
+
+    box-shadow:
+      0 0 0 5px #D9E2C7,
+      0 0 0 10px hsl(0, 0%, 90%);
+  
+    border-radius: 10px;
+
+    margin: 30px;
+  }
+ .icon {
+     width: 26px;
+     opacity: 0.5;
+ }
