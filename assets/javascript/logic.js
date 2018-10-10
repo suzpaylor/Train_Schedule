@@ -2,12 +2,12 @@ $(document).ready(function () {
 
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBBKvVwkwAXak92qufSs1Gpq5GO1jN-1d4",
-    authDomain: "employee-database10-2.firebaseapp.com",
-    databaseURL: "https://employee-database10-2.firebaseio.com",
-    projectId: "employee-database10-2",
-    storageBucket: "employee-database10-2.appspot.com",
-    messagingSenderId: "670599357177"
+    apiKey: "AIzaSyCf-7KtjorIZsEw7-fALD9Oif-ENFOWtss",
+    authDomain: "train-scheduler-homework-122b2.firebaseapp.com",
+    databaseURL: "https://train-scheduler-homework-122b2.firebaseio.com",
+    projectId: "train-scheduler-homework-122b2",
+    storageBucket: "train-scheduler-homework-122b2.appspot.com",
+    messagingSenderId: "178218769244"
   };
   firebase.initializeApp(config);
 
@@ -67,7 +67,7 @@ $(document).ready(function () {
     $("#all-display").append(
       ' <tr><td>' + newTrain +
       ' </td><td>' + newLocation +
-      ' </td><td>' + newCost +
+      ' </td><td>' + '$' + newCost +
       ' </td><td>' + newFreq +
       ' </td><td>' + catchTrain +
       ' </td><td>' + tMinutesTillTrain + ' </td></tr>');
